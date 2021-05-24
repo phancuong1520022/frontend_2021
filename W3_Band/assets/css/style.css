@@ -1,0 +1,344 @@
+/*  reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+    1. Từ ngoài vào trong
+    2. Trên xuống dưới
+    3. Tổng quan đến chi tiết
+*/
+
+
+/*
+    - Vị trí
+    - Kích thước (width, heigh)
+    - Màu sắc
+    - Hình dạng
+*/
+
+#main{
+
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: white!important;
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    /* trục độ sâu */
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block; 
+}
+
+#nav li{
+    position: relative;   
+    
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    /*chieu cao cua chu*/
+    line-height: 46px;
+    font-family: Arial;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav>li:hover>a {
+    color: black;
+    background-color: #ccc;
+}
+#nav .nav-arrow-down{
+    font-size: 13px;
+}
+
+/*Hiện các giá trị trong More khi di chuột vào*/
+#nav li:hover .subnav{
+    display: block;
+   
+}
+
+#nav .subnav{
+    /*Ban đầu để giá trị trong more ẩn đi*/
+    display: none;
+    min-width: 160;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: white;
+    /*bóng đỗ*/
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+   
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+
+
+/* Icon search button */
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+
+#header .search-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* Slider */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    /* chiều rộng luôn bằng 50% chiều dài */
+    padding-top: 50%;
+    background: url('/assets/img/slider2.jpg') top center / cover no-repeat;
+   
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    /* can giua */
+    width: 100%;
+    /* 
+    right: 0
+    left: 0 
+    */
+    text-align: center;
+
+    
+}
+#slider .text-heading{
+    /* giam độ dày chữ (500-700)*/
+    font-weight: 500;
+    font-size: 24px;
+
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+  
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    /* căn giữa */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    /* khoang cach cac chu */
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size: 15px;
+    /* can đều 2 bên */
+    text-align: justify;
+    /* Khoảng cách giữa 2 dòng chữ */
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 48px;
+    text-align: center;
+    /* Fix float */
+    overflow: hidden;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+}
+
+#content .member-name{
+    font-size: 15px;
+   
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    /* độ bo tròn của ảnh */
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    /* padding: 11px 16px; */
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list{
+    background-color: white;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    background-color: #000;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    /* chi su dung voi float phia tren */
+    margin-top: -3px;
+}
+
+.place-list{
+    /* padding-top: 32px; */
+    margin: 32px -8px 48px;
+    /* padding: 48px 0; */
+}
+
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    
+    padding: 8px 8px;
+}
+
+
+.place-img{
+    /* khong vượt quá thẻ chứa nó */
+    width: 100%;
+    /* Fix khoảng cách giữa ảnh và div (place-body) */
+    display: block;
+
+}
+
+.place-img:hover{
+    opacity: 0.6;
+
+}
+
+.place-body{
+    padding: 16px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc{
+    margin-top: 15px;
+    
+}
+
+.place-buy-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 11px 16px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+#footer{
+    
+}
+

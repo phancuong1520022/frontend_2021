@@ -1,0 +1,24 @@
+.image{
+    width: 120px;
+   
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    float: left;
+}
+#box1{
+    background-color: darkkhaki;
+}
+
+#box2{
+    background-color:green;
+    
+}
+
+#box3{
+    background-color:dodgerblue;
+}
+
+button{
+    width: 100px;
+}

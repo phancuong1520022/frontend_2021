@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="display.css">
+</head>
+
+<body>
+    <div class="image" id="box1">Box1
+        <img src="box1.jfif" alt="sea" style="width: 100%;">
+        <button onclick="remove()">Remove</button>
+    </div>
+
+    <div class="image" id="box2">Box2
+        <img src="box2_img_lights.jpg" alt="box2" style="width:100%">
+        <button onclick="hide()">Hide</button>
+    </div>
+
+    <div class="image" id="box3">Box3
+        <img src="box3_img_forest.jpg" alt="box2" style="width:100%">
+        <button onclick="Reset()">Reset</button>
+    </div>
+
+    <script>
+        function remove() {
+            document.getElementById("box1").style.display = "none";
+        }
+
+        function hide() {
+            document.getElementById("box2").style.visibility = "hidden";
+        }
+
+        function Reset() {
+            document.getElementById("box1").style.display = "block";
+            document.getElementById("box2").style.visibility = "visible";
+        }
+    </script>
+
+</body>
+
+</html>
